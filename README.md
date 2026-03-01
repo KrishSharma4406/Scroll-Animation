@@ -2,12 +2,12 @@
 
 A stunning scroll-based car animation built with Next.js, React, TypeScript, and GSAP. Watch the McLaren car smoothly travel across the screen as you scroll, with dynamic letter reveals, trail effects, and animated statistics.
 
-## 🔗 Links
+## Links
 
 - **Live Demo**: [https://krishsharma4406.github.io/Scroll-Animation/](https://krishsharma4406.github.io/Scroll-Animation/)
 - **GitHub Repository**: [https://github.com/KrishSharma4406/Scroll-Animation](https://github.com/KrishSharma4406/Scroll-Animation)
 
-## ✨ Features
+## Features
 
 - **Scroll-based car animation** - McLaren car moves left to right as you scroll
 - **Dynamic letter reveals** - Letters appear as the car passes them
@@ -17,7 +17,7 @@ A stunning scroll-based car animation built with Next.js, React, TypeScript, and
 - **Fully responsive** - Optimized for all screen sizes
 - **TypeScript** - Full type safety and better developer experience
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -44,7 +44,7 @@ npm run dev
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - **Next.js 16.1.6** - React framework for production
 - **React 19** - UI library
@@ -52,7 +52,7 @@ npm run dev
 - **GSAP 3.14.2** - Professional animation library
 - **Tailwind CSS 4** - Utility-first CSS framework
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 scroll-hero-animation/
@@ -69,7 +69,7 @@ scroll-hero-animation/
         └── deploy.yml               # GitHub Pages deployment
 ```
 
-## 🚗 How It Works
+## How It Works
 
 The animation uses GSAP's ScrollTrigger plugin to create a scroll-based animation:
 
@@ -79,7 +79,7 @@ The animation uses GSAP's ScrollTrigger plugin to create a scroll-based animatio
 4. **Trail Effect**: Updates the trail width to follow the car's center point
 5. **Statistics**: Fade in at specific scroll offsets for added engagement
 
-## 📦 Build & Deploy
+## Build & Deploy
 
 Build for production:
 ```bash
@@ -88,11 +88,11 @@ npm run build
 
 The project automatically deploys to GitHub Pages via GitHub Actions on every push to the main branch.
 
-## 📝 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 👤 Author
+## Author
 
 **Krish Sharma**
 - GitHub: [@KrishSharma4406](https://github.com/KrishSharma4406)
