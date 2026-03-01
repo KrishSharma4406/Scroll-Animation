@@ -1,36 +1,98 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scroll Hero Animation
 
-## Getting Started
+A stunning scroll-based car animation built with Next.js, React, TypeScript, and GSAP. Watch the McLaren car smoothly travel across the screen as you scroll, with dynamic letter reveals, trail effects, and animated statistics.
 
-First, run the development server:
+## 🔗 Links
 
+- **Live Demo**: [https://krishsharma4406.github.io/Scroll-Animation/](https://krishsharma4406.github.io/Scroll-Animation/)
+- **GitHub Repository**: [https://github.com/KrishSharma4406/Scroll-Animation](https://github.com/KrishSharma4406/Scroll-Animation)
+
+## ✨ Features
+
+- **Scroll-based car animation** - McLaren car moves left to right as you scroll
+- **Dynamic letter reveals** - Letters appear as the car passes them
+- **Trail effect** - Green trail follows the car's movement
+- **Animated statistics** - Performance stats fade in at specific scroll positions
+- **Smooth animations** - Powered by GSAP ScrollTrigger with scrub effect
+- **Fully responsive** - Optimized for all screen sizes
+- **TypeScript** - Full type safety and better developer experience
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 20.x or higher
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/KrishSharma4406/Scroll-Animation.git
+cd Scroll-Animation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## Learn More
+## 🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 16.1.6** - React framework for production
+- **React 19** - UI library
+- **TypeScript 5** - Type-safe JavaScript
+- **GSAP 3.14.2** - Professional animation library
+- **Tailwind CSS 4** - Utility-first CSS framework
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+scroll-hero-animation/
+├── app/
+│   ├── components/
+│   │   └── CarScrollAnimation.tsx  # Main animation component
+│   ├── globals.css                  # Global styles
+│   ├── layout.tsx                   # Root layout
+│   └── page.tsx                     # Home page
+├── public/
+│   └── mclaren-car.png             # Car asset
+└── .github/
+    └── workflows/
+        └── deploy.yml               # GitHub Pages deployment
+```
 
-## Deploy on Vercel
+## 🚗 How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The animation uses GSAP's ScrollTrigger plugin to create a scroll-based animation:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **ScrollTrigger Setup**: Pins the animation container and links progress to scroll position
+2. **Car Movement**: Transforms the car's X position based on scroll progress
+3. **Letter Reveals**: Each letter in "MCLAREN" reveals when the car passes its position
+4. **Trail Effect**: Updates the trail width to follow the car's center point
+5. **Statistics**: Fade in at specific scroll offsets for added engagement
+
+## 📦 Build & Deploy
+
+Build for production:
+```bash
+npm run build
+```
+
+The project automatically deploys to GitHub Pages via GitHub Actions on every push to the main branch.
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**Krish Sharma**
+- GitHub: [@KrishSharma4406](https://github.com/KrishSharma4406)
